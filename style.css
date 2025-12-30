@@ -1,0 +1,145 @@
+:root {
+  --bg: #0b0b0b;
+  --card: #141414;
+  --text: #ffffff;
+  --muted: #a1a1a1;
+  --border: #262626;
+  --accent: #3b82f6;
+}
+
+body.light {
+  --bg: #f4f4f5;
+  --card: #ffffff;
+  --text: #0b0b0b;
+  --muted: #525252;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 40px 20px;
+  transition: 0.3s ease;
+}
+
+/* Hero */
+.hero {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Toggle */
+.theme-toggle {
+  width: 52px;
+  height: 28px;
+  background: var(--border);
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch {
+  width: 22px;
+  height: 22px;
+  background: var(--card);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.3s ease;
+}
+
+body.light .switch {
+  transform: translateX(24px);
+}
+
+/* Content */
+.content {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+.card p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
