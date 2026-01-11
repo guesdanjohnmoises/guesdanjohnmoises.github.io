@@ -2,66 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Guesdan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guesdan John Moises | Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="hero">
-    <div class="hero-left">
-      <img src="profile.jpg" alt="Guesdan profile" class="avatar">
-      <div>
-        <h1>Guesdan, John Moises</h1>
-        <p class="location">📍 University of the Cordilleras</p>
-        <p class="role">BSIT • Web Technology Development</p>
+  <header>
+    <div></div>
+
+    <div class="header-right">
+      <span id="local-time" class="local-time"></span>
+
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="switch"></div>
       </div>
     </div>
-
-    <!-- Toggle -->
-    <div class="theme-toggle" onclick="toggleTheme()">
-  <span class="icon moon">🌙</span>
-  <span class="icon sun">☀️</span>
-  <div class="switch"></div>
-</div>
-
   </header>
 
-  <!-- Main Content -->
-  <main class="content">
+  <main>
+    <h1>Guesdan, John Moises</h1>
+    <h2>BSIT – Web Technology Development</h2>
 
-    <!-- About Card -->
-    <section class="card">
-      <h2>About</h2>
+    <div class="info">
+      <p><strong>Age:</strong> 21</p>
+      <p><strong>University:</strong> University of the Cordilleras</p>
       <p>
-        I am a 21-year-old BSIT student majoring in Web Technology Development
-        at the University of the Cordilleras. Currently learning and building
-        my foundation in modern web development.
+        <strong>GitHub:</strong>
+        <a href="https://github.com/guesdanjohnmoises" target="_blank">
+          github.com/guesdanjohnmoises
+        </a>
       </p>
-      <p class="muted">
-        This portfolio will grow as I gain more experience and projects.
+      <p>
+        I am currently studying and building my skills in web development.
+        This portfolio will grow as I learn more.
       </p>
-    </section>
-
-    <!-- Links Card -->
-    <section class="card actions">
-      <a href="https://github.com/guesdanjohnmoises" target="_blank" class="btn">
-        GitHub
-      </a>
-    </section>
-
+    </div>
   </main>
 
   <footer>
-    2026 Guesdan, John Moises. All rights reserved.
+    © 2026 Guesdan John Moises. All rights reserved.
   </footer>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("light");
-    }
-  </script>
-
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
