@@ -1,111 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guesdan John Moises | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guesdan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">GUESDAN</div>
-        <ul>
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#education-section">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-            <li>
-                <a href="https://github.com/guesdanjohnmoises" target="_blank">
-                    GitHub
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-left">
+      <img src="profile.jpg" alt="Guesdan profile" class="avatar">
+      <div>
+        <h1>Guesdan, John Moises</h1>
+        <p class="location">📍 University of the Cordilleras</p>
+        <p class="role">BSIT • Web Technology Development</p>
+      </div>
+    </div>
 
-    <!-- HERO -->
-    <section id="welcome-section" class="hero">
-        <img src="img/profile.jpg" alt="Guesdan John Moises" class="profile-img">
-        <h1>Hello, I'm <span>Guesdan John Moises</span></h1>
-        <p>Web Developer • Programmer • IT Student</p>
+    <div class="theme-toggle" onclick="toggleTheme()">
+      <span class="icon moon">🌙</span>
+      <span class="icon sun">☀️</span>
+      <div class="switch"></div>
+    </div>    
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- About Card -->
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I am a 21-year-old BSIT student majoring in Web Technology Development
+        at the University of the Cordilleras. Currently learning and building
+        my foundation in modern web development.
+      </p>
+      <p class="muted">
+        This portfolio will grow as I gain more experience and projects.
+      </p>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about-section" class="section">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>
-                I'm <strong>Guesdan John Moises</strong>, a <strong>21-year-old</strong>
-                <strong>BS Information Technology</strong> student at the
-                <strong>University of the Cordilleras</strong>.
-            </p>
-            <p>
-                I live in <strong>Loakan Proper, Baguio City</strong>.
-                I enjoy coding, gaming, and exploring new technologies.
-            </p>
-        </div>
+    <!-- Links Card -->
+    <section class="card actions">
+      <a href="https://github.com/guesdanjohnmoises" target="_blank" class="btn">
+        GitHub
+      </a>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills-section" class="section">
-        <h2>Skills</h2>
-        <div class="card">
-            <ul class="list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>PHP</li>
-            </ul>
-        </div>
-    </section>
+  </main>
 
-    <!-- EDUCATION -->
-    <section id="education-section" class="section">
-        <h2>Education</h2>
-        <div class="card">
-            <p>
-                <strong>Bachelor of Science in Information Technology</strong><br>
-                University of the Cordilleras<br>
-                Currently Enrolled
-            </p>
-        </div>
-    </section>
+  <footer>
+    Minimal Student Portfolio — 2025
+  </footer>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <a href="https://product-landing-page-chi-two.vercel.app/" class="project" target="_blank">
-                Product Landing Page
-            </a>
-            <a href="https://documentation-page-seven.vercel.app/" class="project" target="_blank">
-                Documentation Page
-            </a>
-            <a href="https://tribute-page-two-sigma.vercel.app/" class="project" target="_blank">
-                Tribute Page
-            </a>
-            <a href="https://survey-form-indol.vercel.app/" class="project" target="_blank">
-                Survey Form
-            </a>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact-section" class="section">
-        <h2>Contact Information</h2>
-        <div class="card">
-            <p><strong>Phone:</strong> 0949 472 0480</p>
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/guesdanjohnmoises" target="_blank">
-                    github.com/guesdanjohnmoises
-                </a>
-            </p>
-        </div>
-    </section>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
 
 </body>
 </html>
-  
