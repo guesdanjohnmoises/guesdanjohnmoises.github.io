@@ -1,53 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guesdan John Moises | Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesdan John Moises | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <div></div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">GUESDAN</div>
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#education-section">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li>
+                <a href="https://github.com/guesdanjohnmoises" target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <div class="header-right">
-      <span id="local-time" class="local-time"></span>
+    <!-- HERO -->
+    <section id="welcome-section" class="hero">
+        <img src="img/profile.jpg" alt="Guesdan John Moises" class="profile-img">
+        <h1>Hello, I'm <span>Guesdan John Moises</span></h1>
+        <p>Web Developer • Programmer • IT Student</p>
+    </section>
 
-      <div class="theme-toggle" onclick="toggleTheme()">
-        <div class="switch"></div>
-      </div>
-    </div>
-  </header>
+    <!-- ABOUT -->
+    <section id="about-section" class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I'm <strong>Guesdan John Moises</strong>, a <strong>21-year-old</strong>
+                <strong>BS Information Technology</strong> student at the
+                <strong>University of the Cordilleras</strong>.
+            </p>
+            <p>
+                I live in <strong>Loakan Proper, Baguio City</strong>.
+                I enjoy coding, gaming, and exploring new technologies.
+            </p>
+        </div>
+    </section>
 
-  <main>
-    <h1>Guesdan, John Moises</h1>
-    <h2>BSIT – Web Technology Development</h2>
+    <!-- SKILLS -->
+    <section id="skills-section" class="section">
+        <h2>Skills</h2>
+        <div class="card">
+            <ul class="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="info">
-      <p><strong>Age:</strong> 21</p>
-      <p><strong>University:</strong> University of the Cordilleras</p>
-      <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/guesdanjohnmoises" target="_blank">
-          github.com/guesdanjohnmoises
-        </a>
-      </p>
-      <p>
-        I am currently studying and building my skills in web development.
-        This portfolio will grow as I learn more.
-      </p>
-    </div>
-  </main>
+    <!-- EDUCATION -->
+    <section id="education-section" class="section">
+        <h2>Education</h2>
+        <div class="card">
+            <p>
+                <strong>Bachelor of Science in Information Technology</strong><br>
+                University of the Cordilleras<br>
+                Currently Enrolled
+            </p>
+        </div>
+    </section>
 
-  <footer>
-    © 2026 Guesdan John Moises. All rights reserved.
-  </footer>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <a href="https://product-landing-page-chi-two.vercel.app/" class="project" target="_blank">
+                Product Landing Page
+            </a>
+            <a href="https://documentation-page-seven.vercel.app/" class="project" target="_blank">
+                Documentation Page
+            </a>
+            <a href="https://tribute-page-two-sigma.vercel.app/" class="project" target="_blank">
+                Tribute Page
+            </a>
+            <a href="https://survey-form-indol.vercel.app/" class="project" target="_blank">
+                Survey Form
+            </a>
+        </div>
+    </section>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <!-- CONTACT -->
+    <section id="contact-section" class="section">
+        <h2>Contact Information</h2>
+        <div class="card">
+            <p><strong>Phone:</strong> 0949 472 0480</p>
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/guesdanjohnmoises" target="_blank">
+                    github.com/guesdanjohnmoises
+                </a>
+            </p>
+        </div>
+    </section>
+
 </body>
 </html>
+  
